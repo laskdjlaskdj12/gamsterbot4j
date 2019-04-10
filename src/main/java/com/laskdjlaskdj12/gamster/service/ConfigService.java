@@ -38,7 +38,7 @@ public class ConfigService {
 	@Nullable
 	private String readConfigFile() throws IOException {
 		ClassLoader classLoader = getClass().getClassLoader();
-		File propertyFile = new File(classLoader.getResource("property").getFile());
+		File propertyFile = new File(classLoader.getResource("discord.config").getFile());
 		return FileUtils.readFileToString(propertyFile);
 	}
 

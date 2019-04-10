@@ -45,7 +45,6 @@ public class Runner {
 
 	private void registerHandler(JDA jda) {
 		CommandHandler commandHandler = new JDA3Handler(jda);
-
 		commandHandler.registerCommand(new HelpCommand());
 	}
 }
