@@ -1,6 +1,7 @@
 package com.laskdjlaskdj12.gamster.application;
 
 import com.laskdjlaskdj12.gamster.command.HelpCommand;
+import com.laskdjlaskdj12.gamster.command.StartTeamMakingCommand;
 import com.laskdjlaskdj12.gamster.service.ConfigService;
 import de.btobastian.sdcf4j.CommandHandler;
 import de.btobastian.sdcf4j.handler.JDA3Handler;
@@ -46,5 +47,6 @@ public class Runner {
 	private void registerHandler(JDA jda) {
 		CommandHandler commandHandler = new JDA3Handler(jda);
 		commandHandler.registerCommand(new HelpCommand());
+		commandHandler.registerCommand(new StartTeamMakingCommand());
 	}
 }
