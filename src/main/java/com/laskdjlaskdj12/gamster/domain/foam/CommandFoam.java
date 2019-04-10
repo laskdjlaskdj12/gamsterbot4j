@@ -44,18 +44,21 @@ public class CommandFoam {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("경고");
         embedBuilder.setDescription("개인톡으로는 이 명령어가 실행되지 않습니다.");
+        embedBuilder.setColor(Color.RED);
         return embedBuilder.build();
     }
 
     public MessageEmbed noVoiceChannelMessage() {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("참가자 대기 채널인 match 음성채팅방을 찾을수가 없습니다.");
+        embedBuilder.setColor(Color.RED);
         return embedBuilder.build();
     }
 
     public MessageEmbed noMembersFound() {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("대기중인 참가자들을 찾을수없습니다. 내전을 중단합니다.");
+        embedBuilder.setColor(Color.RED);
         return embedBuilder.build();
     }
 
@@ -131,6 +134,27 @@ public class CommandFoam {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("각자 팀 통화방으로 이동합니다.");
         embedBuilder.setColor(Color.BLUE);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed noTeamMake() {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("팀이 만들어지지 않았습니다.");
+        embedBuilder.setColor(Color.RED);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed noMatchChannelMessage() {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("참가자 대기방인 match 채널을 찾을수 없습니다.");
+        embedBuilder.setColor(Color.RED);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed moveToMatchChannelMessage() {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("내전이 끝났습니다. 모든 참가자들을 대기방으로 이동합니다.");
+        embedBuilder.setColor(Color.GREEN);
         return embedBuilder.build();
     }
 }

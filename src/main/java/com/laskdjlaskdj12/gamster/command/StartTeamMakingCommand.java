@@ -2,6 +2,7 @@ package com.laskdjlaskdj12.gamster.command;
 
 import com.laskdjlaskdj12.gamster.domain.foam.CommandFoam;
 import com.laskdjlaskdj12.gamster.domain.vo.Team;
+import com.laskdjlaskdj12.gamster.service.TeamService;
 import de.btobastian.sdcf4j.Command;
 import de.btobastian.sdcf4j.CommandExecutor;
 import net.dv8tion.jda.core.entities.*;
@@ -89,6 +90,9 @@ public class StartTeamMakingCommand implements CommandExecutor {
                 guild.getController().moveVoiceMember(member, team.getVoiceChannel()).complete();
             }
         }
+
+        //5. 팀을 저장하기
+        TeamService.getInstance().register(teamList, guild.getId());
     }
 
     private List<Team> makeTeam(List<Member> members) {
