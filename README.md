@@ -10,6 +10,7 @@
  - [X] 내전 기능
 
 ## 추후 업데이트 기능
+ - [ ] 
  - [ ] 커스텀 팀 나누기
  - [ ] 시청자 모집 및 참여
  - [ ] 투표
@@ -17,7 +18,7 @@
  - [ ] 순서정하기
 
 ### 어플리케이션 실행 환경
-- python 3.5 +
+- Java8
 ---
 
 프로그램 소스 사용은 [라이선스](https://github.com/laskdjlaskdj12/gamsterbot4j/blob/master/LICENSE.md)를 반드시 확인해주세요.  
