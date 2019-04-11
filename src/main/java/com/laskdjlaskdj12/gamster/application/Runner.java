@@ -2,6 +2,7 @@ package com.laskdjlaskdj12.gamster.application;
 
 import com.laskdjlaskdj12.gamster.command.EndTeamMakingCommand;
 import com.laskdjlaskdj12.gamster.command.HelpCommand;
+import com.laskdjlaskdj12.gamster.command.SetTeamCountCommand;
 import com.laskdjlaskdj12.gamster.command.StartTeamMakingCommand;
 import com.laskdjlaskdj12.gamster.service.ConfigService;
 import de.btobastian.sdcf4j.CommandHandler;
@@ -50,5 +51,7 @@ public class Runner {
 		commandHandler.registerCommand(new HelpCommand());
 		commandHandler.registerCommand(new StartTeamMakingCommand());
 		commandHandler.registerCommand(new EndTeamMakingCommand());
+
+		commandHandler.registerCommand(new SetTeamCountCommand());
 	}
 }
