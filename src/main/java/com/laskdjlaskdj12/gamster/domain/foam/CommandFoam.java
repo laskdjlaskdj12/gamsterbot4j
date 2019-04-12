@@ -35,6 +35,7 @@ public class CommandFoam {
     private String makeAllCommandList() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("/help - 모든 명령어들을 보여줍니다. \n");
+        stringBuilder.append("/팀최대인원 [인원수] - 내전때 팀당 최대인원을 설정합니다.\n");
         stringBuilder.append("/내전시작 - 대기방에 있는 참가자들을 랜덤으로 팀을 만들고 통화방으로 이동시킵니다.\n");
         stringBuilder.append("/끝 - 내전이 끝났습니다. 팀을 해체하고 참가자들을 대기방으로 옮깁니다.\n");
         return stringBuilder.toString();
@@ -155,6 +156,27 @@ public class CommandFoam {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("내전이 끝났습니다. 모든 참가자들을 대기방으로 이동합니다.");
         embedBuilder.setColor(Color.GREEN);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed wrongSetMaximumTeamCount() {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("잘못된 명령어입니다. : /팀최대인원 [인원수] ");
+        embedBuilder.setColor(Color.RED);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed setMaximumTeamCount(int count) {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("한팀탄 최대 인원을 " + count + "명 으로 설정완료했습니다.");
+        embedBuilder.setColor(Color.GREEN);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed needMaximumTeamCount() {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("한팀당 최대 인원을 설정 안하셨습니다. /팀최대인원 명령어로 한팀당 최대 인원을 설정해주세요.");
+        embedBuilder.setColor(Color.RED);
         return embedBuilder.build();
     }
 }

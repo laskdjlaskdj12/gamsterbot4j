@@ -1,7 +1,9 @@
 package com.laskdjlaskdj12.gamster.command;
 
 import com.laskdjlaskdj12.gamster.domain.foam.CommandFoam;
+import com.laskdjlaskdj12.gamster.domain.vo.GuildInfo;
 import com.laskdjlaskdj12.gamster.domain.vo.Team;
+import com.laskdjlaskdj12.gamster.service.GuildInfoService;
 import com.laskdjlaskdj12.gamster.service.TeamService;
 import de.btobastian.sdcf4j.Command;
 import de.btobastian.sdcf4j.CommandExecutor;
@@ -22,6 +24,13 @@ public class StartTeamMakingCommand implements CommandExecutor {
         if(guild == null){
             MessageEmbed wrongMessage = CommandFoam.getInstance().noPrivateMessage();
             messageChannel.sendMessage(wrongMessage).queue();
+            return;
+        }
+
+        GuildInfo guildInfo = GuildInfoService.getInstance().getGuildInfo(guild.getId());
+        if(guildInfo == null){
+            MessageEmbed needMaximumTeamCount = CommandFoam.getInstance().needMaximumTeamCount();
+            messageChannel.sendMessage(needMaximumTeamCount).queue();
             return;
         }
 
@@ -50,7 +59,8 @@ public class StartTeamMakingCommand implements CommandExecutor {
         MessageEmbed makeTeamMessage = CommandFoam.getInstance().makeTeamMessage();
         messageChannel.sendMessage(makeTeamMessage).queue();
 
-        List<Team> teamList = makeTeam(members);
+        List<Team> teamList = makeTeam(members, guildInfo);
+        guildInfo.setTeamList(teamList);
 
         List<MessageEmbed> showTeamMessage = CommandFoam.getInstance().showTeamMessage(teamList);
         for(MessageEmbed messageEmbed : showTeamMessage) {
@@ -95,18 +105,19 @@ public class StartTeamMakingCommand implements CommandExecutor {
         TeamService.getInstance().register(teamList, guild.getId());
     }
 
-    private List<Team> makeTeam(List<Member> members) {
+    private List<Team> makeTeam(List<Member> members, GuildInfo guildInfo) {
         // 참여자들을 섞어주기
         long seed = System.nanoTime();
         Collections.shuffle(members, new Random(seed));
 
+        int maximumTeamCount = guildInfo.getMaximumTeamCount();
         // 배그 스쿼드를 기준으로 팀을 나누기
-        int less = members.size() % 4;
+        int less = members.size() % maximumTeamCount;
         if(less > 0){
             less = 1;
         }
 
-        int teamCount = (members.size() / 4) + less;
+        int teamCount = (members.size() / maximumTeamCount) + less;
         List<Team> teamList = new ArrayList<>();
 
         for (int i = 0; i < teamCount; i++){
