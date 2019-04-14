@@ -1,7 +1,9 @@
 package com.laskdjlaskdj12.gamster.command;
 
 import com.laskdjlaskdj12.gamster.domain.foam.CommandFoam;
+import com.laskdjlaskdj12.gamster.domain.vo.GuildInfo;
 import com.laskdjlaskdj12.gamster.domain.vo.Team;
+import com.laskdjlaskdj12.gamster.service.GuildInfoService;
 import com.laskdjlaskdj12.gamster.service.TeamInfoService;
 import de.btobastian.sdcf4j.Command;
 import de.btobastian.sdcf4j.CommandExecutor;
@@ -15,7 +17,8 @@ public class EndTeamMakingCommand implements CommandExecutor {
     @Command(aliases = "/끝")
     public void EndCivilWar(Guild guild, MessageChannel messageChannel){
         TeamInfoService teamInfoService = TeamInfoService.getInstance();
-        List<Team> teamList = teamInfoService.getTeamList(guild.getId());
+        GuildInfo guildInfo = GuildInfoService.getInstance().getGuildInfo(guild.getId());
+        List<Team> teamList = guildInfo.getTeamList();
 
         if(teamList == null){
             MessageEmbed messageEmbed = CommandFoam.getInstance().noTeamMake();

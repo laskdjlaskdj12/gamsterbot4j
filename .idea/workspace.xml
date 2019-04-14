@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e6a947-ad59-4c61-b2d7-26619e82709f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.laskdjlaskdj12.gamster.gamsterbot4j.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.laskdjlaskdj12.gamster.gamsterbot4j.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/com.laskdjlaskdj12.gamster.gamsterbot4j.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.laskdjlaskdj12.gamster.gamsterbot4j.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/ConfigService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/ConfigService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/discord.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/discord.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/EndTeamMakingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/EndTeamMakingCommand.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -86,11 +82,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="728">
               <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/StartTeamMakingCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="67" column="9" selection-start-line="65" selection-start-column="57" selection-end-line="67" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/EndTeamMakingCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/TeamService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,9 +124,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/ConfigService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="924">
               <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
               <folding>
+                <element signature="e#1098#1099#0" expanded="true" />
                 <element signature="e#1138#1139#0" expanded="true" />
               </folding>
             </state>
@@ -117,34 +144,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="504">
-                <caret line="18" selection-start-line="18" selection-end-line="18" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="84">
-                <caret line="3" selection-start-line="3" selection-end-line="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="224">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -152,7 +155,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/application/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="588">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -177,6 +180,7 @@
       <find>TEamInfoSer</find>
       <find>shuffle</find>
       <find>buildscript</find>
+      <find>GuildInfo</find>
     </findStrings>
     <replaceStrings>
       <replace>public static MessageEmbed</replace>
@@ -200,15 +204,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/domain/vo/GuidlInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/GuildInfoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/SetTeamCountCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/StartTeamMakingCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/TeamInfoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/StartSideTeamService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/ChannelService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/StartSideTeamCommand.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/laskdjlaskdj12/gamster/Service/TeamService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/laskdjlaskdj12/gamster/Service/TeamServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/TeamService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/application/Runner.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/VERSION.md" />
@@ -216,12 +217,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/discord.config" />
         <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/ConfigService.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/TeamService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/EndTeamMakingCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/StartTeamMakingCommand.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-969" />
-    <option name="y" value="-24" />
+    <option name="x" value="-970" />
+    <option name="y" value="-25" />
     <option name="width" value="2560" />
     <option name="height" value="1440" />
   </component>
@@ -231,7 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,6 +322,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -354,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.gamsterbot4j [jar]">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.laskdjlaskdj12.gamster.Application" />
       <module name="com.laskdjlaskdj12.gamster.gamsterbot4j.main" />
@@ -467,6 +472,7 @@
       <workItem from="1554945313900" duration="8000" />
       <workItem from="1554958610336" duration="1392000" />
       <workItem from="1555203171082" duration="4267000" />
+      <workItem from="1555233489148" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="라이선스 업데이트">
       <created>1554966948051</created>
@@ -531,7 +537,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555226584198</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="gradle jar를 이용해서 run이 안됬던 버그 픽스">
+      <created>1555227673529</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555227673529</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Shuffle이 안되는 버그 수정">
+      <created>1555232987990</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555232987991</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -558,7 +578,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17629000" />
+    <option name="totallyTimeSpent" value="20042000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -573,7 +593,7 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1928072" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19480519" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -589,7 +609,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32931355" />
       <window_info anchor="bottom" id="SonarLint" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.29506546" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29506546" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Build" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32930514" />
@@ -661,7 +681,9 @@
     <MESSAGE value="LICENSE.md를 업데이트" />
     <MESSAGE value="버전 업데이트" />
     <MESSAGE value="gradle sdcf4j import 버그 픽스" />
-    <option name="LAST_COMMIT_MESSAGE" value="gradle sdcf4j import 버그 픽스" />
+    <MESSAGE value="gradle jar를 이용해서 run이 안됬던 버그 픽스" />
+    <MESSAGE value="Shuffle이 안되는 버그 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shuffle이 안되는 버그 수정" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GPL_V3.md">
@@ -685,13 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/EndTeamMakingCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -722,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/StartTeamMakingCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/GuildInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
@@ -750,18 +758,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#191#192#0" expanded="true" />
             <element signature="e#237#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/TeamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2262#2263#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -804,6 +800,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/2566800dc841d9d2c5a0d34d807e45d4107dbbdf/commons-io-2.6-sources.jar!/org/apache/commons/io/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="1842" column="33" lean-forward="true" selection-start-line="1842" selection-start-column="33" selection-end-line="1842" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/VERSION.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -821,10 +831,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/Application.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="728">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/EndTeamMakingCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/TeamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/ConfigService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
+          <folding>
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -835,33 +873,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/2566800dc841d9d2c5a0d34d807e45d4107dbbdf/commons-io-2.6-sources.jar!/org/apache/commons/io/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="1842" column="33" lean-forward="true" selection-start-line="1842" selection-start-column="33" selection-end-line="1842" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/service/ConfigService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
-          <folding>
-            <element signature="e#1138#1139#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="224">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/application/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="588">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -869,10 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laskdjlaskdj12/gamster/command/StartTeamMakingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="168">
+          <caret line="67" column="9" selection-start-line="65" selection-start-column="57" selection-end-line="67" selection-end-column="9" />
         </state>
       </provider>
     </entry>
