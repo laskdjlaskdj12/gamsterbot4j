@@ -1,7 +1,6 @@
 package com.laskdjlaskdj12.gamster.domain.foam;
 
 import com.laskdjlaskdj12.gamster.domain.vo.Team;
-import com.sun.javafx.scene.control.skin.EmbeddedTextContextMenuContent;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.MessageEmbed;
