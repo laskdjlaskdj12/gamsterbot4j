@@ -22,8 +22,8 @@ jar{
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.6'
     annotationProcessor 'org.projectlombok:lombok:1.18.6'
-    implementation group: 'de.btobastian.sdcf4j', name: 'sdcf4j-core', version: '1.0.10'
-    implementation group: 'de.btobastian.sdcf4j', name: 'sdcf4j-jda3', version: '1.0.10'
+    compile group: 'de.btobastian.sdcf4j', name: 'sdcf4j-core', version: '1.0.10'
+    compile group: 'de.btobastian.sdcf4j', name: 'sdcf4j-jda3', version: '1.0.10'
     implementation('net.dv8tion:JDA:3.7.1_385') {
         exclude module: 'opus-java'
     }
