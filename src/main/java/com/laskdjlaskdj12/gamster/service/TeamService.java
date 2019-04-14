@@ -50,10 +50,12 @@ public class TeamService {
         MessageEmbed messageEmbed = CommandFoam.getInstance().makeSideTeamMessage();
         messageChannel.sendMessage(messageEmbed).queue();
 
-        Collections.shuffle(inMembers);
+        ArrayList<Member> members = new ArrayList<>(inMembers);
+
+        Collections.shuffle(members);
 
         //멤버들을 팀리스트에 배분을 하기
-        List<Team> teamList = divideMembers(inMembers);
+        List<Team> teamList = divideMembers(members);
 
         //팀이름을 정하기
         for(Team team : teamList){

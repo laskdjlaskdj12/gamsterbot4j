@@ -108,7 +108,9 @@ public class StartTeamMakingCommand implements CommandExecutor {
     private List<Team> makeTeam(List<Member> members, GuildInfo guildInfo) {
         // 참여자들을 섞어주기
         long seed = System.nanoTime();
-        Collections.shuffle(members, new Random(seed));
+
+        ArrayList<Member> ShuffleList = new ArrayList<>(members);
+        Collections.shuffle(ShuffleList, new Random(seed));
 
         int maximumTeamCount = guildInfo.getMaximumTeamCount();
         // 배그 스쿼드를 기준으로 팀을 나누기
@@ -124,8 +126,8 @@ public class StartTeamMakingCommand implements CommandExecutor {
             teamList.add(new Team());
         }
 
-        for (int i = 0; i < members.size(); i++){
-            Member member = members.get(i);
+        for (int i = 0; i < ShuffleList.size(); i++){
+            Member member = ShuffleList.get(i);
             int teamIndex = (teamCount + i) % teamCount;
             Team team = teamList.get(teamIndex);
             team.getMembers().add(member);
