@@ -14,7 +14,7 @@ import java.util.List;
 
 public class StartSideTeamCommand implements CommandExecutor {
 
-    @Command(aliases = "/편나누기", description = "모든 참여자들을 양팀의 편으로 나눕니다.")
+    @Command(aliases = "/편나누기", description = "모든 참여자들을 두ㅏ편으로 나눕니다.")
     public void makeSideTeam(Guild guild, MessageChannel messageChannel) {
         ChannelService channelService = new ChannelService(guild, messageChannel);
         TeamService teamService = new TeamService(guild, messageChannel);
