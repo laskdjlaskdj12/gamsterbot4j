@@ -1,6 +1,7 @@
 package com.laskdjlaskdj12.gamster.domain.foam;
 
 import com.laskdjlaskdj12.gamster.domain.vo.Team;
+import com.sun.javafx.scene.control.skin.EmbeddedTextContextMenuContent;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.MessageEmbed;
@@ -176,6 +177,20 @@ public class CommandFoam {
     public MessageEmbed needMaximumTeamCount() {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("한팀당 최대 인원을 설정 안하셨습니다. /팀최대인원 명령어로 한팀당 최대 인원을 설정해주세요.");
+        embedBuilder.setColor(Color.RED);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed makeSideTeamMessage() {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("참가자들을 두편으로 나눕니다.");
+        embedBuilder.setColor(Color.BLUE);
+        return embedBuilder.build();
+    }
+
+    public MessageEmbed noMakeSideMembers() {
+        EmbedBuilder embedBuilder = new EmbedBuilder();
+        embedBuilder.setTitle("참가자가 한명이여서 편을 나눌수가 없습니다.");
         embedBuilder.setColor(Color.RED);
         return embedBuilder.build();
     }
