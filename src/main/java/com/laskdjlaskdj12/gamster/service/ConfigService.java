@@ -4,8 +4,7 @@ import com.google.gson.Gson;
 import org.apache.commons.io.FileUtils;
 
 import javax.annotation.Nullable;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 
 
@@ -37,9 +36,16 @@ public class ConfigService {
 
 	@Nullable
 	private String readConfigFile() throws IOException {
-		ClassLoader classLoader = getClass().getClassLoader();
-		File propertyFile = new File(classLoader.getResource("discord.config").getFile());
-		return FileUtils.readFileToString(propertyFile);
+		InputStream in = getClass().getResourceAsStream("/discord.config");
+		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+
+		String result = "";
+		String output = "";
+		while((output = reader.readLine()) != null){
+			result += output;
+		}
+
+		return result;
 	}
 
 	@Nullable
