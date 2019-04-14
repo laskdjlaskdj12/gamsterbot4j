@@ -13,6 +13,7 @@ repositories {
     maven { url 'https://jitpack.io'}
 }
 jar{
+    finalizedBy shadowJar
     manifest {
         attributes  'Title': 'gamster4j', 'Version': version, 'Main-Class': 'com.laskdjlaskdj12.gamster.Application'
     }
@@ -33,4 +34,5 @@ dependencies {
     compile group: 'commons-io', name: 'commons-io', version: '2.6'
     compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
     testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+    classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
 }
