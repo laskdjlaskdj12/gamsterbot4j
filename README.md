@@ -1,4 +1,5 @@
 # GamerBot
+[![Build Status](https://travis-ci.org/laskdjlaskdj12/viewerMatcherServer.svg?branch=master)](https://travis-ci.org/laskdjlaskdj12/viewerMatcherServer)
 [![works badge](https://cdn.rawgit.com/nikku/works-on-my-machine/v0.2.0/badge.svg)](https://github.com/nikku/works-on-my-machine)
 
 겜스터 디스코드 봇입니다.
